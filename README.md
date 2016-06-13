@@ -1,8 +1,6 @@
-[![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://paypal.me/sahat) [![Join the chat at https://gitter.im/sahat/hackathon-starter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/sahat/hackathon-starter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Thinkful Pair on Node](https://tf-assets-staging.s3.amazonaws.com/badges/thinkful_repo_badge.svg)](http://start.thinkful.com/node/)
+My personal portfolio page, built upon [sahat/hackathon-starter](https://github.com/sahat/hackathon-starter):
 
 **Live Demo**: http://swango.xyz
-
-My portfolio page, built upon [hackathon-starter](https://github.com/sahat/hackathon-starter):
 
 A boilerplate for **Node.js** web applications.
 
