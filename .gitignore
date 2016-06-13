@@ -66,4 +66,5 @@ jspm_packages
 .node_repl_history
 
 # personal params
-.env.example
+.env
+
