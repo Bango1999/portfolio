@@ -34,7 +34,6 @@ var userController = require('./controllers/user');
 var apiController = require('./controllers/api');
 var contactController = require('./controllers/contact');
 var gunController = require('./controllers/gun');
-var bottomupController = require('./controllers/bottomup');
 var eldController = require('./controllers/eld');
 var bullseyeController = require('./controllers/bullseye');
 var bangoController = require('./controllers/beingbango');
@@ -136,7 +135,6 @@ app.get('/account/unlink/:provider', passportConfig.isAuthenticated, userControl
 * Showcase routes
 */
 app.get('/gunmedown', gunController.gun);
-app.get('/bottomup', bottomupController.bottomup);
 app.get('/eld', eldController.eld);
   app.get('/eld/arma2/unban', eldController.unban);
   app.get('/eld/epoch/unban', eldController.unban);
