@@ -38,5 +38,8 @@ $(document).ready(function() {
   $('.headContact').html(
     '812-XXX-XXXX &bull; ' + showEM("nagol","zyx.ognaws")
   );
+  $('.ER').html(
+    showEM("nagol","zyx.ognaws")
+  );
 });
 	
