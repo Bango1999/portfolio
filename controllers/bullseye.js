@@ -1,9 +1,10 @@
+var path = require('path');
 /**
  * GET /
  * Bullseye Home
  */
 exports.home = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/index.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'index.html'));
 };
 
 /**
@@ -11,7 +12,7 @@ exports.home = function(req, res) {
  * Bullseye Prostaff
  */
 exports.prostaff = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/prostaff.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'prostaff.html'));
 };
 
 /**
@@ -19,7 +20,7 @@ exports.prostaff = function(req, res) {
  * Bullseye Colors
  */
 exports.colors = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/colors.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'colors.html'));
 };
 
 /**
@@ -27,7 +28,7 @@ exports.colors = function(req, res) {
  * Bullseye Order
  */
 exports.order = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/order.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'order.html'));
 };
 
 /**
@@ -35,7 +36,7 @@ exports.order = function(req, res) {
  * Bullseye Contact
  */
 exports.contact = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/contact.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'contact.html'));
 };
 
 /**
@@ -43,7 +44,7 @@ exports.contact = function(req, res) {
  * Bullseye Curt
  */
 exports.curt = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/curt.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'curt.html'));
 };
 
 /**
@@ -51,7 +52,7 @@ exports.curt = function(req, res) {
  * Bullseye Jodi
  */
 exports.jodi = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/jodi.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'jodi.html'));
 };
 
 /**
@@ -59,7 +60,7 @@ exports.jodi = function(req, res) {
  * Bullseye 8190
  */
 exports.x8190 = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/8190.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', '8190.html'));
 };
 
 /**
@@ -67,31 +68,7 @@ exports.x8190 = function(req, res) {
  * Bullseye 452x
  */
 exports.x452 = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/452x.html');
-};
-
-/**
- * GET /
- * Bullseye payment
- */
-exports.payment = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/payment.html');
-};
-
-/**
- * GET /
- * Bullseye Cancel
- */
-exports.cancel = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/cancel.html');
-};
-
-/**
- * GET /
- * Bullseye Success
- */
-exports.success = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/success.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', '452x.html'));
 };
 
 /**
@@ -99,5 +76,29 @@ exports.success = function(req, res) {
  * Bullseye XS2
  */
 exports.xs2 = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/bullseye/xs2.html');
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'xs2.html'));
+};
+
+/**
+ * GET /
+ * Bullseye payment
+ */
+exports.payment = function(req, res) {
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'payment.html'));
+};
+
+/**
+ * GET /
+ * Bullseye Cancel
+ */
+exports.cancel = function(req, res) {
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'cancel.html'));
+};
+
+/**
+ * GET /
+ * Bullseye Success
+ */
+exports.success = function(req, res) {
+  res.sendFile(path.join(__dirname, '../views/bullseye', 'success.html'));
 };

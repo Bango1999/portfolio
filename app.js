@@ -37,7 +37,6 @@ var gunController = require('./controllers/gun');
 var eldController = require('./controllers/eld');
 var bullseyeController = require('./controllers/bullseye');
 var bangoController = require('./controllers/beingbango');
-var scienceController = require('./controllers/science');
 
 /**
  * API keys and Passport configuration.
@@ -156,7 +155,6 @@ app.get('/being-bango', bangoController.home);
   app.get('/being-bango/lloyd', bangoController.lloyd);
   app.get('/being-bango/plan', bangoController.plan);
   app.get('/being-bango/sparta', bangoController.sparta);
-app.get('/science', scienceController.home)
 
 
 /**

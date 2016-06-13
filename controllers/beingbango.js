@@ -1,9 +1,10 @@
+var path = require('path');
 /**
  * GET /
  * Being Bango Home
  */
 exports.home = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/beingbango/index.html');
+  res.sendFile(path.join(__dirname, '../views/beingbango', 'index.html'));
 };
 
 /**
@@ -11,7 +12,7 @@ exports.home = function(req, res) {
  * Being Bango browning
  */
 exports.browning = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/beingbango/browning.html');
+  res.sendFile(path.join(__dirname, '../views/beingbango', 'browning.html'));
 };
 
 /**
@@ -19,7 +20,7 @@ exports.browning = function(req, res) {
  * Being Bango einstein
  */
 exports.einstein = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/beingbango/einstein.html');
+  res.sendFile(path.join(__dirname, '../views/beingbango', 'einstein.html'));
 };
 
 /**
@@ -27,7 +28,7 @@ exports.einstein = function(req, res) {
  * Being Bango lloyd
  */
 exports.lloyd = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/beingbango/lloyd.html');
+  res.sendFile(path.join(__dirname, '../views/beingbango', 'loyd.html'));
 };
 
 /**
@@ -35,7 +36,7 @@ exports.lloyd = function(req, res) {
  * Being Bango plan
  */
 exports.plan = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/beingbango/plan.html');
+  res.sendFile(path.join(__dirname, '../views/beingbango', 'plan.html'));
 };
 
 /**
@@ -43,5 +44,5 @@ exports.plan = function(req, res) {
  * Being Bango sparta
  */
 exports.sparta = function(req, res) {
-  res.sendFile('/home/nitrous/code/app/views/beingbango/sparta.html');
+  res.sendFile(path.join(__dirname, '../views/beingbango', 'sparta.html'));
 };
