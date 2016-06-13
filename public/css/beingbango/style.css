@@ -1,0 +1,53 @@
+* {box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box}
+body {max-width:960px;background:url("/img/beingbango/congruent_outline.png");margin: 0 auto;font-family:"Droid Serif",serif;font-size:100%}
+header {background:#555;font-family:"Michroma",sans-serif;color:#ccc}
+a {color:#cf0000;text-decoration:none}
+a:hover {text-decoration:underline}
+#eld{position:absolute;z-index:1}
+#headerLeft {display:inline-block;width:50%;float:left}
+#headerRight {display:inline-block;width:50%;float:right}
+#headerLeft h1,
+#headerRight h1 {text-align:center;margin:2% 0 3% 0;text-shadow:2px 2px 3px black}
+.headerTitle {font-size:3.5em}
+header nav ul {background:#333;margin:0;padding:0}
+#headerLeft {padding-right:9%}
+#headerRight {padding-left:9%}
+header nav ul li {list-style-type:none;display:inline-block;width:30%;padding:1% 2% 1% 2%;text-align:center}
+header nav ul li a {color:#ccc;text-decoration:none;position:relative;z-index:500}
+.clearBoth {clear:both}
+.center {margin: 0 auto;text-align:center}
+.centerTxt {text-align:center}
+#content {background:url("/img/beingbango/ricepaper2.png")}
+#leftSide {float:left;border-right:1px solid black}
+#rightSide {float:right}
+#leftSide,
+#rightSide {width:50%;display:inline-block;margin-bottom:20px}
+#leftSide h2,
+#rightSide h2 {text-align:center;text-decoration:underline}
+#leftSide h3,
+#rightSide h3 {text-align:center}
+#leftSide h2:first-of-type,
+#rightSide h2:first-of-type {margin:40px 19% 25px 19%}
+#rightSide p,
+#leftSide p {margin: 10px 4% 10px 4%;font-size:0.8em}
+.indexNavigation {margin:18px 5% 0 5%;border:1px solid black;-webkit-transition:border 1s}
+.indexNavigation:hover {border:1px dashed #cf0000}
+.inline {display:inline}
+#lloyd {border-radius:15em;-moz-border-radius:15em;-webkit-border-radius:15em}
+#lloydQuote {width:90%;height:110px;background:rgba(0,0,0,0.4);border-top-left-radius:15em;border-bottom-left-radius:15em;padding:5px 0 5px 5px;margin-top:2%}
+#coldTater {width:74%;display:inline-block;height:100px;vertical-align:middle;color:#fff;text-shadow:1px 1px 1px #000;font-weight:bold;font-style:italic}
+#quoter {width:74%;display:inline-block;height:20px;vertical-align:baseline;margin-top:20px;text-align:right;font-style:normal}
+footer {text-align:center;color:#ddd;margin: 5px 0 10px 0}
+footer a:hover,
+nav ul a:hover {color:black;text-decoration:none}
+.reference {font-size:0.6em;text-align:center;clear:both}
+.italic {font-style:italic}
+.noBold {font-weight:normal}
+.stanza {margin-bottom:10px}
+.pWithImg {display:inline-block;width:60%}
+.marginLeft {margin-left:20px}
+.marginTop {margin-top:10px}
+
+/* facebook like btn hack */
+/* still times out after 45 seconds, failing to resize the way it was intended, and disappears completely */
+.fb_iframe_widget iframe {height:20px !important;width:86px !important}

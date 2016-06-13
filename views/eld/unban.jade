@@ -1,0 +1,54 @@
+extends ../layout
+
+block head
+  link(rel='stylesheet', href='/css/eld/eld.css')
+  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Prosto+One|Radley|Arbutus')
+
+block content
+  #container
+    h1.pageTitle
+      a(href='/eld')
+        img(src='/img/eld/logo.jpg', alt='ELD Clan')
+      span Unban Form
+    #adPane
+      img(src='/img/eld/ad.gif', alt='adspace')
+    .content
+      // CONTENT START
+      .contentBlock
+        form#unbanForm(onsubmit='return CheckUnban()', action='/eld/unban', method='POST')
+          .formPortion
+            label(for='whichGame') Which Server:
+            select#whichGame(name='whichGame')
+              option(value='') Please choose a Server...
+              option(value='epoch') XXX Epoch Chernarus
+              option(value='xxx') Arma 2 Free (XXX)
+              option(value='vip') Arma 2 Free (XXX_VIP)
+          .ubFormProblems
+          .formPortion
+            p We need you to start the game and navigate to player profile. Choose edit, and write down your Player Name and ID number to include in this form
+            span.formText.red Player name:
+            input#playerName(type='text', placeholder='JoeKiller27')
+            span.formText.red ID number:
+            input#playerId(type='text', placeholder='97342398')
+          .ubFormProblems
+          .ubFormProblems
+          .formPortion
+            span.formText.red Give us your appeal notes here:
+            textarea#unbanComment(rows='7', cols='45', placeholder='I want to be unbanned because...')
+          .ubFormProblems
+          .formPortion
+            span.formText
+              | Are you, or will you ever be, a 
+              span.red ROBOT
+              | ?
+            input(type='radio', name='rbt', value='Yes', checked='')
+            span.smallRadio Yes :-(
+              br
+              input(type='radio', name='rbt', value='No')
+              span.smallRadio No, I&apos;m human. I want this form to send!
+          .ubFormProblems
+          .formPortion
+            button(type='submit') Send
+
+block scripts
+  script(src='/js/eld/eld.js')

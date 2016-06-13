@@ -1,0 +1,72 @@
+extends ../layout
+
+block head
+  link(rel='stylesheet', href='/css/eld/eld.css')
+  link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Fredericka+the+Great|Prosto+One|Radley|Arbutus')
+
+block content
+  #container
+    h1.pageTitle
+      a(href='/eld')
+      img(src='/img/eld/logo.jpg', alt='ELD Clan')
+      span XXX Home
+    #adPane
+      img(src='/img/eld/ad.gif', alt='adspace')
+    #nav
+      dl#navDL
+        a(href='/eld')
+          dt Home
+        a(href='/eld/about')
+          dt About
+        a(href='/eld/faq')
+          dt Contact
+        .hoverArea(onmouseover='ShowNavChild("epochChild")', onmouseout='HideNavChild("epochChild")')
+          a(href='/eld/epoch')
+            dt DayZ Epoch &#x25BC;
+          a(href='/eld/epoch/mission')
+            dd.epochChild Mission
+          a(href='/eld/epoch/ts')
+            dd.epochChild Teamspeak
+          a(href='/eld/epoch/unban')
+            dd.epochChild.last Unban Form
+        .hoverArea(onmouseover='ShowNavChild("arma2Child")', onmouseout='HideNavChild("arma2Child")')
+          a(href='/eld/arma2')
+            dt Arma 2 Free &#x25BC;
+          a(href='/eld/arma2/mission')
+            dd.arma2Child Mission
+          a(href='/eld/arma2/ts')
+            dd.arma2Child Teamspeak
+          a(href='/eld/arma2/unban')
+            dd.arma2Child.last Unban Form
+    .content
+      .contentBlock
+        h2 The ELD sites are in #Beta
+        p
+          span We are happy to say that we have a semi-functional website on our hands.  Going to take alot more work to get in where we want it to be, but trust us when we say it will be worth the wait! In the meantime, 
+          a(href='/eld/arma2') XXX
+          span  is up for anyone to join on ArmA 2: Free.
+      .contentBlock
+        h2 Spotlight: Arma 2 Free
+        p Arma 2 Free is the grassroots of XXX. It has since been discontinued, and therefore, only a select few people actually have it. We have hosted our XXX Longest Day server for more than a year, and plan on keeping it around as long as people use it! XXX hosts custom Longest Day missions, based off of those that we have found and enjoyed. Here is the mission cycle.
+        dl
+          dt Nazguleye's Longest Day (CARS)
+          dd Based off of the generic Longest Day missions, CARS' key feature is the vehicles that have been conveniently and sometimes cleverly placed throughout Chernarus to make the objective more dynamic for the players. The teamkill glitch was removed and AI were also added, which give the player negative points when killed.
+          dt The Longest Day |>REVISION<|
+          dd Revision is much harder than CARS, but with the right kind of players, there is always progress to be made.  2 Hueys and an Apache spawn at the carrier, just waiting to turn the enemy into buttermilk. The goal is to eliminate the Russian nuclear threat that has mobilized in Chernarus.
+          dt XXX Domination
+          dd A better take on the Carrier version of Domination 3, XXX Domination is very feature rich, including mobile HQ respawn stations, parajump flags stationed at base and each completed objective, class perks, rich objective system, and much more.
+        p Big thanks to all the regular players who make these missions fun!
+      .contentBlock
+        h2 Meet Your Founders!
+        img.alignLeft.contentImg(src='/img/eld/naz2.jpg', width='43%' height='43%' alt='Nazguleye')
+        p
+          span(style='color:orange') Nazguleye
+          span is the founder of XXX. He runs the clan servers, which are hosted in Russia and the USA. You can thank him for servers like XXX Epoch Chernarus, XXX, and XXX_VIP
+        br
+        img.alignRight.contentImg(src='/img/eld/bango2.jpg', height='35%', width='35%', alt='Bango')
+        p
+          span(style='color:orange') Bango
+          span is an American Graduate of Computer Science.  A coder at heart, he likes to tinker around with code, whether it be editing DayZ/ArmA missions, assisting Naz with server administration, or making a cool clan website, he is always having fun doing things for his team.
+
+block scripts
+  script(src='/js/eld/eld.js')
