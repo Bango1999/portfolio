@@ -3,7 +3,7 @@
   "version": "3.5.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sahat/hackathon-starter.git"
+    "url": "https://github.com/Bango1999/portfolio.git"
   },
   "scripts": {
     "start": "node app.js",
